@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<title>Galeria</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+
+	<style>
+
+		@font-face{
+			font-family: "Zelda";
+			src: url('zeldadxt.ttf');
+		}
+
+		body{
+			background-color: #988;
+		}
+
+		div.my-image{
+			height: 200px;
+			background-size: cover;
+			border: solid 5px; #333;
+			filter: grayscale(100%);
+		}
+
+		div.my-image:hover{
+			transform: scale(1.7);
+			z-index: 999;
+			filter: grayscale(0%);
+			transition: 0.25s;
+		}
+		h1.titulo{
+			color: #fff;
+			font-size: 50px;
+			text-align: center;
+			font-style: italic;
+			font-family: Zelda;
+		}
+
+		h2.subtitulo{
+			color: #fff;
+			font-size: 25px;
+			text-align: center;
+			font-style: italic;
+			font-family: Zelda;
+		}
+
+		div.header{
+			/*Espaço no topo*/
+			padding-top: 20px;
+			
+			/*Espaço embaixo*/
+			padding-bottom: 20px;
+			
+			/*Borda inferior*/
+			border-bottom: dashed 3px #fff;
+
+			/*Margem inferior*/
+			margin-bottom: 10px;
+		}
+
+		div.footer h3{
+			color: #fff;
+			text-decoration: : underline;
+		}
+
+		div.footer p{
+			color: #999;
+		}
+
+		div.footer span{
+			color: #999;
+		}
+
+		div.footer{
+			margin-top: 20px;
+			border: solid 5px #fff;
+		}
+
+		div.header i{
+			color: #fff;
+			position: relative;
+			left: 50%;
+			font-size: 50px;
+			width: 100px;
+			margin-left: -50px;
+			text-align: center;
+			height: 100px;
+			background-color: #555;
+			line-height: 100px;
+			margin-bottom: 10px;
+			border-radius: 50%;
+		}
+
+	</style>
+
+	</head>
+
+	<body>
+		<div class="container">
+
+			<!--Header-->
+			<div class="row header">
+				<div class="col-md-12">
+					<h1 class="titulo">Minha Galeria</h1><br>
+					<h2 class="subtitulo">Galeria Responsiva em Bootstrap</h2>
+				</div>
+			</div>
+
+			<!--GALERIA-->
+			<div class="row">
+				<div class="col-md-3 my-image" style="background-image: url('img1.jpg')">Foto 1</div>
+				<div class="col-md-3 my-image" style="background-image: url('img2.gif')">Foto 2</div>
+				<div class="col-md-3 my-image" style="background-image: url('img3.png')">Foto 3</div>
+				<div class="col-md-3 my-image" style="background-image: url('img4.jpg')">Foto 4</div>
+			
+				<div class="col-md-3 my-image" style="background-image: url('img5.jpg')">Foto 5</div>
+				<div class="col-md-3 my-image" style="background-image: url('https://j.gifs.com/5QQV6Y.gif')">Foto 6</div>
+				<div class="col-md-3">Foto 7</div>
+				<div class="col-md-3">Foto 8</div>
+
+				<div class="col-md-3">Foto 9</div>
+				<div class="col-md-3">Foto 10</div>
+				<div class="col-md-3">Foto 11</div>
+				<div class="col-md-3">Foto 12</div>
+			</div>
+		</div>
+	</body>
+</html>
